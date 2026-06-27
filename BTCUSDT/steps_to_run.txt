@@ -1,0 +1,16 @@
+Verilog- OBI calculation
+
+cd /mnt/d/Mukesh/bybit
+/root/intelFPGA/18.1/modelsim_ase/bin/vsim -c -do run_sim.do
+
+--------------------------------------------
+New Window prompt Rocky
+cd /mnt/d/Mukesh/bybit
+g++ -o ob_feeder_live ob_feeder_live.cpp \
+    -I/root/websocketpp \
+    -I/root/json/include \
+    -lssl -lcrypto -lboost_system -lpthread \
+    -std=c++17 -O2
+
+./ob_feeder_live > input_pipe.txt
+
