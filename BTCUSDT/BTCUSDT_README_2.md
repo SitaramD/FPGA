@@ -1,4 +1,4 @@
-# BTCUSDT Order Book Processor — Verilog RTL Pipeline (Kria KV260)
+# Crypto BTCUSDT Bybit Exchange Order Book Processor — Verilog RTL Pipeline (Kria KV260)
 
 A synthesizable Verilog pipeline that computes order-book imbalance (OBI) and rolling volatility from live L2 BTCUSDT order-book data, entirely in hardware. Target: Xilinx Kria KV260 (Zynq UltraScale+), 100 MHz PL clock.
 
